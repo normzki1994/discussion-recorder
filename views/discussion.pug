@@ -1,0 +1,33 @@
+include includes/header.pug
+style
+    include ../public/css/discussion.css
+main
+    section(class="discussion")
+        h1(class="discussion-title") Discussion List
+        div(class="discussion-list")
+            each discussion in discussions
+                div(class="discussion-item")
+                    div(class="discussion-item-details")
+                        h2(class="discussion-item-title")= discussion.subject
+                        p(class="discussion-item-date")= discussion.date
+                        p(class="discussion-item-location")= discussion.location
+                        p(class="discussion-item-outcome")= "Outcome:" + discussion.outcome
+                    div(class="menu")
+                        a(href= "discussion/" + discussion._id class="view-button") View
+            //- div(class="discussion-item")
+            //-     div(class="discussion-item-details")
+            //-         h2(class="discussion-item-title")= "discussion.subject"
+            //-         p(class="discussion-item-date")= "discussion.date"
+            //-         p(class="discussion-item-location")= "discussion.location"
+            //-         p(class="discussion-item-outcome")= "Outcome:"
+            //-     div(class="menu")
+            //-         button(type="button" class="view-button") View
+            //- div(class="discussion-item")
+            //-     div(class="discussion-item-details")
+            //-         h2(class="discussion-item-title")= "discussion.subject"
+            //-         p(class="discussion-item-date")= "discussion.date"
+            //-         p(class="discussion-item-location")= "discussion.location"
+            //-         p(class="discussion-item-outcome")= "Outcome:"
+            //-     div(class="menu")
+            //-         button(type="button" class="view-button") View
+                    

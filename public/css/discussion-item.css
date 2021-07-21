@@ -1,0 +1,27 @@
+.discussion {
+    padding: 2rem;
+}
+
+.discussion-item {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 2rem;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.discussion-audio {
+    margin-bottom: 3rem;
+}
+
+.disucussion-subject {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.discussion-date,
+.discussion-location,
+.discussion-colleague,
+.discussion-outcome {
+    margin-bottom: 0.5rem;
+}

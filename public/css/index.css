@@ -1,0 +1,56 @@
+.discussion {
+    padding: 2rem;
+}
+
+.discussion-title {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 1.5rem;
+}
+
+.discussion-form {
+    display: block;
+    width: 500px;
+    margin: 0 auto;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+.form-control {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-bottom: 1rem;
+}
+
+.form-label,
+.form-input {
+    display: block;
+    margin-left: 1rem;
+    font-size: 1rem;
+}
+
+.form-input {
+    width: 300px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.start-recording-button,
+.stop-recording-button {
+    display: block;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    margin: 0 1rem;
+}
+
+.save-button {
+    display: block;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    margin: 0 auto;
+}

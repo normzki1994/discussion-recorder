@@ -1,0 +1,43 @@
+include includes/header.pug
+style
+    include ../public/css/index.css
+
+main
+    section(class="discussion")
+        h1(class="discussion-title") Discussion
+
+        form(class="discussion-form")
+            div(class="form-control")
+                label(class="form-label") Subject
+                input(class="form-input subject" type="text") 
+            div(class="form-control")
+                label(class="form-label") Colleague
+                input(class="form-input colleague" type="text" placeholer="Enter email of colleague") 
+            div(class="form-control")
+                label(class="form-label") Location
+                input(class="form-input location" type="text") 
+
+            div(class="audio-container")
+                audio(class="audio" controls)
+                p Recording Status: 
+                    span(class="recording-status")
+                
+
+            //- div(class="upload-details")
+            //-     label(id="percentage" class="percentage-label") 0%
+            //-     progress(id="percentage" value=0 class="percentage-progress")
+
+            div(class="menu")
+                button(type="button" class="start-recording-button") Start Recording
+                button(type="button" class="stop-recording-button" disabled) Stop Recording
+
+            div(class="form-control")
+                label(class="form-label") Outcome
+                input(class="form-input outcome" type="text") 
+
+            button(type="button" class="save-button") Save
+
+//- script(src="../node_modules/recordrtc/RecordRTC.js")
+script
+    include ../node_modules/recordrtc/RecordRTC.js
+    include ../public/js/index.js

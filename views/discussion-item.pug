@@ -1,0 +1,15 @@
+//- h1= discussion.subject
+include includes/header.pug
+style
+    include ../public/css/discussion-item.css
+main
+    section(class="discussion")
+        div(class="discussion-item")
+            audio(class="discussion-audio" controls)
+                source(src= discussion.audioPath)
+            div(class="discussion-details")
+                h1(class="disucussion-subject")= discussion.subject
+                p(class="discussion-date")= "Date: " + discussion.date
+                p(class="discussion-location")= "Location: " + discussion.location
+                p(class="discussion-colleague")= "Colleague: " + discussion.colleague.email
+                p(class="discussion-outcome")= "Outcome: " + discussion.outcome

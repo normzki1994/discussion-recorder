@@ -1,0 +1,56 @@
+.discussion {
+    padding: 2rem;
+}
+
+.discussion-title {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 1.5rem;
+}
+
+.discussion-list {
+    display: block;
+    width: 500px;
+    margin: 0 auto;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+.discussion-item {
+    background-color: #eee;
+    padding: 0.5rem;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.discussion-item-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.25rem;
+}
+
+.discussion-item-date {
+    font-style: italic;
+    font-size: 0.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.discussion-item-location {
+    margin-bottom: 0.25rem;
+}
+
+.discussion-item-outcome {
+    font-weight: bold;
+}
+
+.menu {
+    margin-left: auto;
+}
+
+.view-button {
+    display: block;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+}

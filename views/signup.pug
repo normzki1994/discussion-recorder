@@ -1,0 +1,14 @@
+include includes/header.pug
+style
+    include ../public/css/signup.css
+main
+    section(class="signup")
+        h1(class="signup-title") Signup
+        form(action="/api/users/signup", method="post" class="signup-form") 
+            div(class="form-control")
+                label(class="form-label") Email
+                input(class="form-input" type="email" name="email")
+            div(class="form-control")
+                label(class="form-label") Password
+                input(class="form-input" type="password" name="password")
+            button(type="submit" class="signup-button") Signup

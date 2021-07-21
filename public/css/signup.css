@@ -1,0 +1,44 @@
+.signup {
+    padding: 2rem;
+}
+
+.signup-title {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2rem;
+}
+
+.signup-form {
+    display: block;
+    width: 500px;
+    margin: 0 auto;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 1.5rem;
+}
+
+.form-control {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.form-label,
+.form-input {
+    display: block;
+    margin-left: 1rem;
+    font-size: 1rem;
+}
+
+.form-input {
+    width: 300px;
+    padding: 0.25rem;
+}
+
+.signup-button {
+    display: block;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    margin: 0 auto;
+}

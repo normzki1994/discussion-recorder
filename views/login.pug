@@ -1,0 +1,14 @@
+include includes/header.pug
+style
+    include ../public/css/login.css
+main
+    section(class="login")
+        h1(class="login-title") Login
+        form(action="/api/users/login" method="post" class="login-form") 
+            div(class="form-control")
+                label(class="form-label") Email
+                input(class="form-input" type="email" name="email")
+            div(class="form-control")
+                label(class="form-label") Password
+                input(class="form-input" type="password" name="password")
+            button(type="submit" class="login-button") Login
